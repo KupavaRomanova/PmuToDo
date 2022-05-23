@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PmuToDo.Android", "PmuToDo\PmuToDo.Android\PmuToDo.Android.csproj", "{E7B68AAC-F04C-42E4-A24D-D7A0A633DCC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PmuToDo", "PmuToDo\PmuToDo\PmuToDo.csproj", "{BCFC985C-CE00-440A-AE6D-7C597A68CF30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7B68AAC-F04C-42E4-A24D-D7A0A633DCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B68AAC-F04C-42E4-A24D-D7A0A633DCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B68AAC-F04C-42E4-A24D-D7A0A633DCC3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E7B68AAC-F04C-42E4-A24D-D7A0A633DCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B68AAC-F04C-42E4-A24D-D7A0A633DCC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B68AAC-F04C-42E4-A24D-D7A0A633DCC3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BCFC985C-CE00-440A-AE6D-7C597A68CF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFC985C-CE00-440A-AE6D-7C597A68CF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFC985C-CE00-440A-AE6D-7C597A68CF30}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BCFC985C-CE00-440A-AE6D-7C597A68CF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFC985C-CE00-440A-AE6D-7C597A68CF30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFC985C-CE00-440A-AE6D-7C597A68CF30}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBF145C2-DF57-4097-8FEB-DCEF65EB1A61}
+	EndGlobalSection
+EndGlobal

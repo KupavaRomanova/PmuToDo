@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:pmu_to_do="clr-namespace:PmuToDo"
+             x:Class="PmuToDo.MainPage"
+             x:DataType="pmu_to_do:MainViewModel">
+
+    <StackLayout BackgroundColor="#0b0917">
+        <Label Text="TODO LIST" 
+               FontAttributes="Bold" 
+               HorizontalTextAlignment="Center" 
+               TextColor="White" 
+               FontSize="48"/>
+
+        <CollectionView ItemsSource="{Binding TasksList}">
+            <CollectionView.ItemTemplate >
+                <DataTemplate x:DataType="{x:Type pmu_to_do:Task}">
+                    <StackLayout Orientation="Horizontal" 
+                                 BackgroundColor="#18132e">
+                        <CheckBox IsChecked="{Binding IsDone}"/>
+                        <Entry Text="{Binding Text}" 
+                               TextColor="White"
+                               WidthRequest="250"/>
+                        <Button Text="Удалить" 
+                                BackgroundColor="Aqua" 
+                                HorizontalOptions="EndAndExpand"
+                                Command="{Binding RemoveTask, Source={RelativeSource AncestorType={x:Type pmu_to_do:MainViewModel}}}"
+                                CommandParameter="{Binding}"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+        <Entry BackgroundColor="#18132e"
+               Placeholder="Введите текст"
+               PlaceholderColor="Gray"
+               ClearButtonVisibility="WhileEditing"
+               TextColor="White"
+               ReturnCommand="{Binding AddTask}"
+               ReturnCommandParameter="{Binding Text, Source={RelativeSource Self}}"/>
+    </StackLayout>
+
+</ContentPage>
